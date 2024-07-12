@@ -6,12 +6,12 @@ spring:
     defer-datasource-initialization: true
   datasource:
     username: sa
-    url: jdbc:h2:mem:customdb;DB_CLOSE_ON_EXIT=FALSE
+    url: jdbc:h2:./target/customuser;DB_CLOSE_ON_EXIT=FALSE
 
 keycloak:
   server:
     contextPath: /auth
     adminUser:
-      username: bael-admin
+      username: b1
       password: pass
     realmImportFile: baeldung-realm.json
